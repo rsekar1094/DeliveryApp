@@ -1,0 +1,92 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/fab_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1d1c1c"
+        android:padding="@dimen/layout_margin"
+        android:text="Navigate"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/Icon_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/fab_1"
+        app:layout_constraintTop_toTopOf="@+id/fab_1" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/layout_margin"
+        android:padding="@dimen/layout_margin"
+        android:src="@mipmap/navigation"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/fab_2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="#1d1c1c"
+        android:padding="@dimen/layout_margin"
+        android:text="My Location"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/Icon_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/fab_2"
+        app:layout_constraintTop_toTopOf="@+id/fab_2" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/layout_margin"
+        android:padding="@dimen/layout_margin"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:tint="@color/whiteColor"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/fab_3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="#1d1c1c"
+        android:padding="@dimen/layout_margin"
+        android:text="Consignee Location"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/Icon_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fab_3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fab_3" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/layout_margin"
+        android:padding="@dimen/layout_margin"
+        android:src="@mipmap/userlocation"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

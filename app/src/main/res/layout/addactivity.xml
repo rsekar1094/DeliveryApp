@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/consignee_name_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:hint="Consignee Name"
+            android:inputType="text"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/Text_size_head_1" />
+
+        <Button
+            android:id="@+id/view_description_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/ripple_effect_list"
+            android:onClick="AddDescription"
+            android:text="Add Comment"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/Icon_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/latlng_text"
+            app:layout_constraintTop_toBottomOf="@+id/consignee_name_text" />
+
+        <TextView
+            android:id="@+id/latlng_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/Text_size_normal"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/view_description_bt"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consignee_name_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/layout_margin"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_lay">
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/whiteColor"
+            android:hint="comments"
+            android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/layout_margin"
+            android:paddingRight="@dimen/layout_margin"
+            android:paddingTop="5dp"
+            android:singleLine="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/Text_size_normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addBt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect_list"
+        android:onClick="addConsignee"
+        android:text="Add"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/Text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

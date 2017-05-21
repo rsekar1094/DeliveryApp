@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="Text_size_normal">14sp</dimen>
+    <dimen name="Icon_text">11sp</dimen>
+    <dimen name="Text_size_head_1">18sp</dimen>
+    <dimen name="Text_size_main_head">25sp</dimen>
+
+
+    <dimen name="layout_margin">10dp</dimen>
+
+</resources>

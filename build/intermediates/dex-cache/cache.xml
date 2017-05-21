@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\rajrajas\Downloads\DeliveryApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\rajrajas\Downloads\DeliveryApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_26329b6515ff2f41c8c48e9f5152f28332283806\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rajrajas\.android\build-cache\3703d57d052409f0cfc4702412afb8916f6ea9e0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="C:\Users\rajrajas\Downloads\DeliveryApp\app\build\intermediates\pre-dexed\release\classes_c890c74b866188fa9a11a37adb880555f99f3f16.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rajrajas\.android\build-cache\3703d57d052409f0cfc4702412afb8916f6ea9e0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="C:\Users\rajrajas\Downloads\DeliveryApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c890c74b866188fa9a11a37adb880555f99f3f16\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rajrajas\Downloads\DeliveryApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="217d21fbf39d0b02d4c83e4448ba12d304531734">
+        <dex dex="C:\Users\rajrajas\Downloads\DeliveryApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c345403b809965450957ae046acc4588186557b5\classes.dex" />
+    </item>
+
+</items>

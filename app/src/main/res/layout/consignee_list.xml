@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.rajrajas.deliveryapp.Model.ListItem" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@drawable/ripple_effect_list"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_margin">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_margin"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/place_holder_img"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/consignee_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="@{item.name}"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/Text_size_head_1"
+                tools:text="Raj" />
+
+            <TextView
+                android:id="@+id/short_description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/Text_size_normal"
+                tools:text="Delivery time should be after 5 " />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/place_holder_img"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:src="@mipmap/placeholder"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/Icon_text"
+            app:layout_constraintLeft_toLeftOf="@+id/place_holder_img"
+            app:layout_constraintRight_toRightOf="@+id/place_holder_img"
+            app:layout_constraintTop_toBottomOf="@+id/place_holder_img"
+            tools:text="2.2 km" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
